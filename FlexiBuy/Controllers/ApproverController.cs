@@ -12,12 +12,17 @@ namespace FlexiBuy.Controllers
     [ApiController]
     public class ApproverController : ControllerBase
     {
+        readonly IApproverService _approverService;
+        public ApproverController()
+        {
+            _approverService = new ApproverService();
+        }
        
         // GET api/Approve/5
         [HttpGet("{id}")]
         public ActionResult<ApproverDetails> GetApproverDetail(int approverId)
         {
-            return new ApproverService().GetApproverDetails(approverId);
+            return _approverService.GetApproverDetails(approverId);
         }
 
     }

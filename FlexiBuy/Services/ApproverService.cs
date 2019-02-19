@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace FlexiBuy.Services
 {
-    public class ApproverService
+    public class ApproverService : IApproverService
     {
         public string GetApproverName(int approverId)
         {
