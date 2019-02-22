@@ -46,7 +46,7 @@ namespace FlexiBuy.Services
 
         Task<User> IUserService.Authenticate(string username, string password)
         {
-            throw new NotImplementedException();
+            return Authenticate(username, password);
         }
 
         Task<IEnumerable<User>> IUserService.GetAll()
