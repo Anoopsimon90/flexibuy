@@ -10,6 +10,7 @@ using Microsoft.Extensions.Logging;
 
 namespace FlexiBuy
 {
+    //https://flexibuy.azurewebsites.net/swagger/index.html
     public class Program
     {
         public static void Main(string[] args)

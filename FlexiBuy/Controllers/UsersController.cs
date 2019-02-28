@@ -21,7 +21,6 @@ namespace FlexiBuy.Controllers
         {
             _userService = userService;
         }
-        //http://jasonwatmore.com/post/2018/09/08/aspnet-core-21-basic-authentication-tutorial-with-example-api
         [AllowAnonymous]
         [HttpPost("authenticate")]
         public async Task<IActionResult> Authenticate([FromBody]User userParam)
